@@ -57,7 +57,7 @@ const CreateInterview = () => {
             var templateParams = {
                 from_name: "Gautam Sai",
                 to_name: curParti.email,
-                message: `Interview is Schedulde at ${startDate} to ${endDate}`
+                message: `You have an interview scheduled at ${startDate} to ${endDate}`
             };
 
             await emailjs.send(SERVICEID, TEMPLATEID, templateParams, USERID)
